@@ -50,7 +50,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     };
 
     try {
-        const response = await fetch('http://127.0.0.1:5000/api/contact', {
+        const response = await fetch('https://club-website-3r77.onrender.com/api/contact', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData)
