@@ -27,10 +27,39 @@ header{
     height: 60px;
     padding: 0 2%;
 }
-header a,
-header p{
+header a{
     color: #fff;
 }
+.anu-link{
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s ease-in-out;
+}
+.ANUlogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border-radius: 60px;
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    transition: all .4s ease;
+
+}
+.anu-link:hover .ANUlogo{
+    background-image: url(school\ logo.jpg);
+    transition: all .4s ease;
+}
+.anu-link:hover .ANUlogo span{
+    opacity: 0;
+}
+
+
 .sidebar-btn a{
     font-size: 24px;
 }
@@ -138,6 +167,7 @@ header p{
     color: #fff;
     font-family: 'Roboto Mono';
 }
+
 /* Events Section */
 .events{
     display: flex;
