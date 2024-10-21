@@ -91,6 +91,8 @@ def contact():
     subject = data.get('subject')
     message = data.get('message')
 
+    
+
     if not (first_name and second_name and email and subject and message):
         return jsonify({"error": "All fields are required"}), 400
 

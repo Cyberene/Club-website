@@ -47,6 +47,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
         phone: e.target.phone.value,
         subject: e.target.subject.value,
         message: e.target.message.value
+        
     };
 
     try {
