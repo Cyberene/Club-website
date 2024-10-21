@@ -103,4 +103,6 @@ def contact():
     return jsonify({"message": "Contact form submitted successfully"}), 200
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=True)
+    # Make sure you're using the correct environment variable for the port
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
