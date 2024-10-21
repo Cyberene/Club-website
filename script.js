@@ -1,7 +1,7 @@
 const textElement = document.getElementById('screen-text');
 
-const text1 = "The Cyberene Club focuses on developing technical skills and innovation through collaborative learning, hands-on workshops, and industry engagement.";
-const text2 = "You clicked Button 2, and this text is now being typed.";
+const text1 = "We focus on developing technical skills and innovation through collaborative learning, hands-on workshops, and industry engagement.";
+const text2 = "WHERE TECHNOLOGY MEETS POSSIBILTY";
 const text3 = "Empowering Future Tech Specialists and Enthusiasts Through Innovation and Excellence.";
 
 
