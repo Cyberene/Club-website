@@ -1,107 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico">
-    <title>Cyberene</title>
-</head>
-<body>
-    <header>
-        <div class="sidebar-btn">
-            <a href="#"><i class='bx bx-menu-alt-left' ></i></a>
-        </div>
-        <a target="_blank" class="anu-link" href="https:/www.anu.ac.ke">
-            <div class="ANUlogo"><span>AFRICA NAZARENE UNIVERSITY</span></div>
-        </a>
-        <div class="contact-btn">
-            <a href="#contact">Contact</a>
-        </div>
-    </header>
-    <section class="hero" id="hero">
-        <div class="hero-info">
-            <p id="add-text">NAZARENE-IT CLUB</p>
-            <h1 id="hollow">Cyberene</h1>
-            <h1 id="main">Cyberene</h1>
-            <p id="motto">"WHERE TECHNOLOGY MEETS POSSIBILTY"</p>
-            <a href="#">DISCOVER</a>
-        </div>
-        <div class="hero-board glassy">
-            <div class="wrapper-btns">
-                <button id="btn1">Mission</button>
-                <button id="btn2">Motto</button>
-                <button id="btn3">Vision</button>
-            </div>
-            <div class="wrapper-screen">
-                <p id="screen-text">Welcome, All of you to Cyberene, where curiosity meets innovation! You've stumbled upon something different.Ready to uncover hidden clues and unlock secrets? Your adventure begins now!</p>
-            </div>
-            <div class="about-btn">
-                <a href="PROPOSED CYBERENE CLUB CONSTITUTION .pdf" download="Cyberene Constitution">Documentation<i class='bx bx-chevron-right'></i></a>
-            </div>
-        </div>
-    </section>
-    <section class="events" id="events">
-        <h2>Events</h2>
-        <div class="events-wrapper">
-            <div class="event glassy">
-                <div class="neon-deco"></div>
-                <div class="event-content">
-                    <div class="event-header">
-                        <div class="event-title">
-                            <h3>NASA Space App Challenge</h3>
-                            <p>The Sun Touches Everything</p>
-                        </div>
-                        <span>Passed</span>
-                    </div>
-                    <p class="event-body">The NASA International Space Apps Challenge is the world’s largest global hackathon, held annually over two days. In 2024, participants from around the world gathered, to solve real-world problems using open data from NASA and its space agency partners. This year’s theme, "The Sun Touches Everything," focused on the Sun’s influence on Earth and space science. Participants tackled various challenges. Projects were judged by space agency experts, with winners selected for Global Awards.</p>
-                    <h6>Date: 5th to 6th October 2024</h6>
-                </div>
-            </div>
-            
-            <div class="event glassy">
-                <div class="neon-deco"></div>
-                <div class="event-content">
-                    <div class="event-header">
-                        <div class="event-title">
-                            <h3>Huawei ICT Competitions</h3>
-                            <p>Sub-Saharan Africa</p>
-                        </div>
-                        <span>Upcoming</span>
-                    </div>
-                    <p class="event-body">This is a competitive ICT talent exchange event developed by Huawei for global college students.To promote the healthy development of the ICT talent ecosystem and support the integretion of industry and eductaion, Huawei invites Huawei ICT Academey and Universities/Colleges to participate in the Huawei ICT Competitions 2024-2025.</p>
-                    <h6>Date: November 2024</h6>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-    <section class="contact" id="contact">
-        <div>
-            <h2>Contact</h2>
-            <p>Feel free to reach out to us – we promise we're friendlier than the bugs we're working on! For any inquiry, clarification, or even just to say hi, drop us a message. And for non-members eager to join, you're just one step away from being part of the crew. Send us a message, and we’ll guide you through the process. Whether you’re curious, ready to dive in, or just love solving IT-related mysteries, we’re excited to welcome you aboard!</p>
-        </div>
-    
-        <form action="" class="glassy" id="contact-form">
-            <h3>Join Us</h3>
-            <div class="name-fields">
-                <input class="glassy" type="text" name="first_name" placeholder="First Name" required>
-                <input class="glassy" type="text" name="second_name" placeholder="Second Name" required>
-            </div>
-            <input class="glassy" type="email" name="email" placeholder="Your email" required>
-            <input class="glassy" type="phone" name="phone" placeholder="Phone Number (Optional)" required>
-            <input class="glassy" type="text" name="subject" placeholder="Subject" required>
-            <textarea class="glassy" name="message" cols="30" rows="10" placeholder="Message"></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>    
-    <footer class="glassy">
-        <p>&copy; Cyberene Club, Africa Nazarene University</p>
-        <p>2024</p>
-    </footer>
-    
-    <script src="script.js"></script>
-</body>
-</html>
+const textElement = document.getElementById('screen-text');
 
+const text1 = "The Cyberene Club focuses on developing technical skills and innovation through collaborative learning, hands-on workshops, and industry engagement. We aim to bridge the gap between academic knowledge and industry needs by providing experience with emerging technologies, networking with IT professionals, and solving real-world challenges.";
+const text2 = "WHERE TECHNOLOGY MEETS POSSIBILITY";
+const text3 = "Empowering Future Tech Specialists and Enthusiasts Through Innovation and Excellence.";
+
+function typeEffect(text) {
+    let index = 0;
+    const speed = 100;
+    textElement.textContent = "";
+
+    function type() {
+        if (index < text.length) {
+            textElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, speed);
+        }
+    }
+
+    type();
+}
+
+document.getElementById('btn1').addEventListener('click', function() {
+    typeEffect(text1);
+});
+
+document.getElementById('btn2').addEventListener('click', function() {
+    typeEffect(text2);
+});
+
+document.getElementById('btn3').addEventListener('click', function() {
+    typeEffect(text3);
+});
+
+document.getElementById('contact-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const formData = {
+        first_name: e.target.first_name.value,
+        second_name: e.target.second_name.value,
+        email: e.target.email.value,
+        phone: e.target.phone.value || '', // Optional phone number
+        subject: e.target.subject.value,
+        message: e.target.message.value
+    };
+
+    try {
+        const response = await fetch('https://club-website-3r77.onrender.com/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        });
+
+        if (response.ok) {
+            alert('Form submitted successfully!');
+        } else {
+            alert('Failed to submit the form.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Error submitting form');
+    }
+});
