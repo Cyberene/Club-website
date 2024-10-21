@@ -80,18 +80,22 @@
     <section class="contact" id="contact">
         <div>
             <h2>Contact</h2>
-            <p>Lorem ipsum ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis in dolores unde assumenda asperiores dolor. Nostrum illo laborum incidunt eligendi, nobis rerum praesentium dicta amet sit obcaecati tenetur repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus error consequuntur, dolorum repudiandae cupiditate harum voluptas ratione iure voluptate omnis, asperiores doloremque, explicabo modi consectetur. Ad eaque praesentium quidem quisquam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis in dolores unde assumenda asperiores dolor. Nostrum illo laborum incidunt eligendi, nobis rerum praesentium dicta amet sit obcaecati tenetur repellat.</p>
         </div>
-
-        <form action="" class="glassy">
+    
+        <form action="" class="glassy" id="contact-form">
             <h3>Join Us</h3>
-            <input class="glassy" type="text" placeholder="Your name" required>
-            <input class="glassy" type="email" placeholder="Your email" required>
-            <input class="glassy" type="text" placeholder="Your phone number">
-            <textarea class="glassy" cols="30" rows="10" placeholder="Message"></textarea>
+            <div class="name-fields">
+                <input class="glassy" type="text" name="first_name" placeholder="First Name" required>
+                <input class="glassy" type="text" name="second_name" placeholder="Second Name" required>
+            </div>
+            <input class="glassy" type="email" name="email" placeholder="Your email" required>
+            <input class="glassy" type="phone" name="phone" placeholder="Phone Number (Optional)" required>
+            <input class="glassy" type="text" name="subject" placeholder="Subject" required>
+            <textarea class="glassy" name="message" cols="30" rows="10" placeholder="Message"></textarea>
             <button type="submit">Submit</button>
         </form>
-    </section>
+    </section>    
     <footer class="glassy">
         <p>&copy; Cyberene Club, Africa Nazarene University</p>
         <p>2024</p>

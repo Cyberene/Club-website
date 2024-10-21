@@ -308,3 +308,26 @@ footer p{
     color: #fff;
     font-size: 14px;
 }
+.contact form .name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+form input[name="first_name"],
+form input[name="second_name"] {
+    flex: 1; /* Makes both first name and second name fields take equal space */
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    width: 100%; /* Ensures input fields take up the full width */
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255, 0.1);
+    background-color: transparent;
+    color: #fff;
+}
+
+form .name-fields input {
+    width: 100%; /* Ensures both first and second name fields combined equal the width of other fields */
+}
