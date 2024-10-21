@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@font-face {
+    font-family: myfont;
+    src: url(Game\ Of\ Squids.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background-color: #111111;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 60px;
+    padding: 0 2%;
+}
+header a,
+header p{
+    color: #fff;
+}
+.sidebar-btn a{
+    font-size: 24px;
+}
+.contact-btn a{
+    border: 1px solid #fff;
+    border-radius: 1px;
+    font-size: 12px;
+    padding: 5px 15px;
+}
+
+.hero{
+    height: 90lvh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    overflow: hidden;
+}
+.hero-info{
+    position: relative;
+}
+.hero-info,
+.hero-btn{
+    color: #fff;
+    padding-left: 8%;
+}
+.hero-info #hollow{
+    font-family: "myFont";
+    position: absolute;
+    top: 40%;
+    left: 0;
+    font-size: 22pc;
+    font-weight: 200;
+    line-height: 0;
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    -webkit-text-stroke-color: rgba(255,255,255, 0.125);
+    z-index: -10;
+}
+.hero-info #main{
+    font-size: 6pc;
+    font-family: 'myFont';
+    line-height: 100%;
+}
+.hero-info #add-text{
+    font-size: 14px;
+}
+.hero-info #motto{
+    padding: 15px 0 25px;
+    font-family: 'myfont';
+    font-size: 14px;
+    font-weight: lighter;
+    color: gray;
+}
+.hero-info a{
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 10px;
+    padding: 8px 20px;
+}
+.hero-board{
+    width: 300px;
+    height: auto;
+    margin-right: 40px;
+    border: 1px solid rgba(255,255,255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.glassy{
+    background-color:  rgba(255,255,255, 0.06);
+    backdrop-filter: blur(10px);
+}
+
+.wrapper-btns{
+    display: flex;
+}
+.wrapper-btns button{
+    width: 100%;
+    height: 50px;
+    font-size: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid rgba(255,255,255, 0.06);
+    font-family: 'Roboto Mono';
+    cursor: pointer;
+}
+.wrapper-screen{
+    padding: 40px 20px;
+}
+.wrapper-screen p{
+    font-size: 12px;
+    color: whitesmoke;
+    font-family: 'Roboto Mono';
+}
+.hero .about-btn{
+    width: 100%;
+}
+.hero .about-btn a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255, 0.1);
+    font-size: 12px;
+    color: #fff;
+    font-family: 'Roboto Mono';
+}
+/* Events Section */
+.events{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.events h2{
+    font-family: 'myFont';
+    color: #fff;
+    font-size: 4.5em;
+}
+
+.events-wrapper{
+    margin: 0 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+}
+.event{
+    display: flex;
+    color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid rgba(255,255,255, 0.1);
+    /* overflow: hidden; */
+}
+.event-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.event-header p{
+    font-size: 12px;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+.event-header span{
+    border: 1px solid gray;
+    color: gray;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 20px;
+}
+.event-content{
+    padding: 30px;
+}
+.event .event-body{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.event h6{
+    font-size: 14px;
+    color: gray;
+}
+.neon-deco{
+    height: 100%;
+    width: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #fff,
+    0 0 25px #fff;
+    transition: .4s ease;
+}
+.event:hover .neon-deco{
+    box-shadow: 0 0 5px #fff,
+    0 0 25px #fff, 0 0 50px #fff,
+    0 0 100px #fff, 0 0 200px #fff;
+}
+
+/* Contact Section */
+.contact{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contact h2{
+    font-family: 'myFont';
+    color: #fff;
+    font-size: 4.5em;
+}
+.contact p{
+    color: #fff;
+    max-width: 400px;
+    font-size: 14px;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    height: 30em;
+    padding:40px 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255, 0.125);
+}
+form h3{
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+form input{
+    margin-bottom: 10px;
+    padding:10px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255, 0.1);
+    background-color: transparent;
+    color: #fff;
+}
+form textarea{
+    resize: none;
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+    border: 1px solid rgba(255,255,255, 0.1);
+    margin: 5px 0 20px;
+}
+form button{
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+footer{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+footer p{
+    font-weight: 500;
+    color: #fff;
+    font-size: 14px;
+}
