@@ -1,9 +1,9 @@
 const textElement = document.getElementById('screen-text');
 
-const text1 = "The Cyberene Club focuses on developing technical skills and innovation through collaborative learning, hands-on workshops, and industry engagement. We aim to bridge the gap between academic knowledge and industry needs by providing experience with emerging technologies, networking with IT professionals, and solving real-world challenges. We also promotes ethical tech practices and leadership development to prepare members for successful IT careers";
-const text2 = "You clicked Button 2, and this text is now being typed.";
+const text1 = "We focus on developing technical skills and innovation through collaborative learning, hands-on workshops, and industry engagement.";
+const text2 = "WHERE TECHNOLOGY MEETS POSSIBILTY";
 const text3 = "Empowering Future Tech Specialists and Enthusiasts Through Innovation and Excellence.";
-const text4 = "Button 4 was clicked! Typing out some new text now.";
+
 
 function typeEffect(text) {
     let index = 0;
