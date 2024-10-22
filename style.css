@@ -308,3 +308,25 @@ footer p{
     color: #fff;
     font-size: 14px;
 }
+
+@media only screen and (max-width: 767px){
+    .contact{
+        flex-direction: column;
+    }
+    .events-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero{
+        flex-direction: column;
+        justify-content: end;
+        height: 90vh;
+        gap: 10%;
+        padding-bottom: 8%;
+        margin-left: -5%;
+    }
+    .hero #main{
+        font-size: 5.5pc;
+
+    }
+}
